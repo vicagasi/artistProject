@@ -1,0 +1,377 @@
+*{
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 16px;
+}
+
+body {
+	background-color: black;
+	margin: 0%;
+	padding: 0%;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+/* Blind Guardian Colors & Fonts */
+
+.bggold {
+	color:#FFBF00;
+}
+
+.bg-bggold {
+	background-color: #FFBF00;
+}
+
+.bggrey {
+	color:#CACACA;
+}
+
+.opensans {
+	font-family: 'Open Sans', sans-serif;
+}
+
+.quin {
+	font-family: 'Quintessential', cursive;
+}
+
+/* Drawer */
+#drawer {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: -300px;
+	z-index: 777;
+	background-color: rgba(0,0,0, 0.8);
+	width: 300px;
+	transition: left ease .3s;
+}
+
+#drawer.active {
+	left: 0px;
+}
+
+#drawer ul {
+	font-family: 'Quintessential', cursive;
+	color: white;
+	list-style: none;
+	font-size: 1.875rem;
+}
+
+#drawer ul li {
+	margin-top: 10%;
+}
+
+#drawer a:link {
+  text-decoration: none;
+  color: white;
+}
+
+#drawer a:visited {
+  text-decoration: none;
+  color: white;
+}
+
+#drawer a:hover {
+  text-decoration: none;
+  color: grey;
+}
+
+#drawer img {
+	margin: 6%;
+}
+
+/* Nav */
+
+nav {
+	position: sticky;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 666;
+}
+
+.goldbox {
+	width: 50px;
+	height: 50px;
+	padding: 10px;
+}
+
+.goldbox:hover {
+	filter: brightness(110%);
+	cursor: pointer;
+}
+
+.goldbox.open {
+	visibility: hidden;
+}
+
+.hamburger {
+	top: 5px;
+}
+
+.smicon {
+	filter: invert(100%);
+	padding: 7px;
+	width: 40px;
+}
+
+.smicon:hover {
+	filter: invert(90%);
+	cursor: pointer;
+}
+
+.rlicon {
+	padding: 7px;
+	width: 40px;
+}
+
+.rlicon:hover {
+	filter: brightness(70%);
+	cursor: pointer;
+}
+
+.header {
+	
+}
+
+/* About Secton */
+
+.about {
+	background-image: url(assets/mrsandman.png);
+	margin-top: -0.3%;
+}
+
+.aboutTitle {
+	letter-spacing: 1.25px;
+}
+
+.aboutText {
+	font-size: 1.875rem;
+}
+
+/* Album Secton */
+
+.albumSection {
+	background-image: url(assets/albumsbackground.png);
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	padding: 7%;
+}
+
+.album {
+	width: 33%;
+	margin-bottom: 3%;
+}
+
+.album h1 {
+	color:#FFBF00;
+	font-family: 'Quintessential', cursive;
+	font-size:1.875rem;
+}
+
+.album p {
+	color:#CACACA;
+	font-family: 'Open Sans', sans-serif;
+}
+
+audio {
+	filter: invert(100%);
+	height: 25px;
+	width: 50%;
+}
+
+/* Live Secton */
+
+.livehead img {
+	width: 100%;
+	margin: 0%;
+}
+
+.live video {
+	width: 100%;
+	margin: 0%;
+	margin-top: -1%;
+	padding: 0%;
+}
+
+/* Concert Secton */
+
+.concerts {
+	background-image: url(assets/concertssbackground.gif);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 3%;
+}
+
+.concerts h1 {
+	color:#FFBF00;
+	font-family: 'Quintessential', cursive;
+	font-size:1.875rem;
+}
+
+.concerts p {
+	color:#CACACA;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.concerts div div {
+	width: 15%;
+}
+
+.concerts div div div {
+	width: 100%;
+	padding: 1%;
+	background-color: rgba(0,0,0, 0.5);
+}
+
+.goldButton {
+	opacity: 95%;
+	position: relative;
+	background-color: #4D0B0B;
+	color: #FFBF00;
+	font-size: 2.5rem;
+	text-align: center;
+	text-decoration: none;
+	padding: 2%;
+	width: 33%;
+	left: 33%;
+	right: 33%;
+	margin-top: 2%;
+	margin-bottom: 2%;
+	border: solid 1px #FFBF00;
+	border-radius: 5px;
+}
+
+.goldButton:hover {
+	opacity: 100%;
+	filter: brightness(120%);
+}
+
+/* Newsletter Section */
+
+.newsletter form {
+	color:#FFBF00;
+	background: rgb(60,4,4);
+    background: -webkit-linear-gradient(top left, rgba(60,4,4,1) 0%, rgba(34,5,5,1) 100%);
+    background: -o-linear-gradient(top left, rgba(60,4,4,1) 0%, rgba(34,5,5,1) 100%);
+    background: linear-gradient(to bottom right, rgba(60,4,4,1) 0%, rgba(34,5,5,1) 100%);
+	width: 100%;
+	padding: 2%;
+	padding-left: 7%;
+	padding-right: 7%;
+}
+
+.newsletter form h1 {
+	font-family: 'Quintessential', cursive;
+	font-size: 2.5rem;
+}
+
+.newsletter form p {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.25rem;
+}
+
+.newsletter form input[type=text] {
+	width: 100%;
+	padding: 1%;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.newsletter form input[type=text]:focus {
+	border: 2px solid black;
+}
+
+.newsletter form input[type=button] {
+	background: rgb(61,61,61);
+    background: -webkit-linear-gradient(rgba(61,61,61,1) 0%, rgba(0,0,0,1) 100%);
+    background: -o-linear-gradient(rgba(61,61,61,1) 0%, rgba(0,0,0,1) 100%);
+    background: linear-gradient(rgba(61,61,61,1) 0%, rgba(0,0,0,1) 100%);
+	margin-top: 2%;
+	padding: 1%;
+	padding-left: 4%;
+	padding-right: 4%;
+	font-family: 'Quintessential', cursive;
+	font-size: 2.5rem;
+	color:#FFBF00;
+	border: solid 1px #FFBF00;
+}
+
+.newsletter form input[type=button]:hover {
+	filter: brightness(120%);
+}
+
+/* Footer Section */
+
+footer {
+	background-image: url(assets/footer.png);
+}
+
+footer img {
+	margin: 1%;
+	width: 20%;
+}
+
+/* Mobile Styles */
+
+/* Tablet */
+@media only screen and (max-width: 800px) {
+	html {
+		font-size: 12px;
+	}
+
+	nav p {
+		display: none;
+	}
+
+	.about .flex {
+		flex-direction: column;
+	}
+
+	.about h1 {
+		width: 100%;
+	}
+
+	.about p {
+		width: 100%;
+	}
+
+	audio {
+		width: 100%;
+	}
+
+	.concerts {
+		background-size: 900px 900px;
+	}
+
+	.concerts div div {
+		width: 50%;
+	}
+
+	.newsletter form input[type=text] {
+		padding: 3%;
+	}
+	.album {
+		width: 44%;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+
+	html {
+		font-size: 9px;
+	}
+
+	.concerts {
+		background-size: 600px 600px;
+	}
+}

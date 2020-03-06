@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Blind Guardian</title>
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css"/>
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Quintessential&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	
+</head>
+<body>
+
+<script>
+  AOS.init();
+</script>
+
+<!-- Drawer -->
+<div id="drawer">
+	<img src="assets/close.png" class="closer">
+	<ul>
+		<a href="#about"><li>About the Band</li></a>
+		<a href="#albums"><li>Albums</li></a>
+		<a href="#concerts"><li>Past Tours</li></a>
+		<a href="#newsletter"><li>Newsletter</li></a>
+	</ul>
+</div>
+
+<!-- Nav -->
+<nav class="bg-black white flex items-center justify-between dropdown">
+	<div class="bg-bggold goldbox">
+		<img src="assets/hamburger.svg" class="w-100 relative hamburger">
+	</div>
+	<div class="quin flex items-center">
+		<p>Follow us on social media!</p>
+		<a href="https://open.spotify.com/artist/7jxJ25p0pPjk0MStloN6o6?si=NR2A00ciTxavUBqL5zJ78w" target="_blank"><img src="assets/spotify.svg" class="smicon">
+		<img src="assets/fb.svg" class="smicon">
+		<img src="assets/reddit.svg" class="smicon">
+		<img src="assets/youtube.svg" class="smicon">
+		<a href="https://shop.nuclearblast.com/en/shop/index.html" target="_blank"><img src="assets/nuclearblast.png" class="rlicon"></a>
+	</div>
+</nav>
+
+<!-- Header -->
+<img src="assets/header.png" class="ma0 header">
+
+<!-- About Section -->
+<section class="about ph6 pa5" id="about">
+	<h1 class="quin bggold w-40 aboutTitle" id="about">About the Band</h1>
+		
+	<div class="flex">
+		<img src="assets/theband.png">
+		<p class="w-60 opensans bggrey ph3 aboutText">Blind Guardian is a German power metal band formed in 1984 in Krefeld, West Germany. They are often credited as one of the seminal and most influential bands in the power metal and speed metal subgenres. Over the years a theme has developed which personifies the band members as travelling storytellers, leading fans to refer to the band affectionately as "The Bards".</p>
+	</div>
+</section>
+
+<!-- Album Section -->
+<section class="albumSection flex flex-wrap justify-around" id="albums">
+
+	<div class="album" data-aos="fade-up-right">
+		<img src="assets/BattalionsOfFear.png" class="song">
+		<h1>Battalions of Fear</h1>
+		<p>Released in 1988</p>
+		<audio id="bofSong" preload="auto" controls="true">
+			<source src="assets/BattalionsOfFear.mp3">
+		</audio>
+	</div>
+
+	<div class="album" data-aos="fade-up">
+		<img src="assets/FollowTheBlind.png" class="song" onclick="playSong('bfsSong')">
+		<h1>Follow the Blind</h1>
+		<p>Released in 1989</p>
+		<audio id="bfsSong" controls="true" preload="auto">
+			<source src="assets/BanishFromSanctuary.mp3">
+		</audio>
+	</div>
+
+	<div class="album" data-aos="fade-up-left">
+		<img src="assets/TalesFromTheTwilightWorld.png" class="song" onclick="playSong('linthSong')">
+		<h1>Tales From the Twilight World</h1>
+		<p>Released in 1990</p>
+		<audio id="linthSong" controls="true" preload="auto">
+			<source src="assets/LostInTheTwilightHall.mp3">
+		</audio>
+	</div>
+
+	<div class="album" data-aos="fade-up-right">
+		<img src="assets/SomewhereFarBeyond.png" class="song" onclick=" playSong('itfSong')">
+		<h1>Somewhere Far Beyond</h1>
+		<p>Released in 1992</p>
+		<audio id="itfSong" controls="true" preload="auto">
+			<source src="assets/InTheForest.mp3">
+		</audio>
+	</div>
+
+	<div class="album" data-aos="fade-up">
+		<img src="assets/ImaginationsFromTheOtherSide.png" class="song" onclick="playSong('tsfmrSong')">
+		<h1>Imaginations From the Other Side</h1>
+		<p>Released in 1995</p>
+		<audio id="tsfmrSong" controls="true" preload="auto">
+			<source src="assets/TheScriptForMyRequiem.mp3">
+		</audio>
+	</div>
+
+	<div class="album" data-aos="fade-up-left">
+		<img src="assets/NightfallInMiddleEarth.png"class="song" onclick="playSong('itsSong')">
+		<h1>Nightfall in Middle Earth</h1>
+		<p>Released in 1998</p>
+		<audio id="itsSong" controls="true" preload="auto">
+			<source src="assets/IntoTheStorm.mp3">
+		</audio>
+	</div>
+
+	<div class="album" data-aos="fade-up-right">
+		<img src="assets/NightAtTheOpera.png" class="song" onclick="playSong('tsSong')">
+		<h1>A Night at the Opera</h1>
+		<p>Released in 2002</p>
+		<audio id="tsSong" controls="true" preload="auto">
+			<source src="assets/TheSoulforged.mp3">
+		</audio>
+	</div>
+
+	<div class="album" data-aos="fade-up">
+		<img src="assets/ATwistInTheMyth.png" class="song" onclick="playSong('sasSong')">
+		<h1>A Twist in the Myth</h1>
+		<p>Released in 2006</p>
+		<audio id="sasSong" controls="true" preload="auto">
+			<source src="assets/SkaldsAndShadows.mp3">
+		</audio>
+	</div>
+
+	<div class="album" data-aos="fade-up-left">
+		<img src="assets/EdgeOfTime.png" class="song" onclick="playSong('vitdSong')">
+		<h1>At the Edge of Time</h1>
+		<p>Released in 2010</p>
+		<audio id="vitdSong" controls="true" preload="auto">
+			<source src="assets/VoiceInTheDark.mp3">
+		</audio>
+	</div>
+
+	<div class="album" data-aos="fade-up-right">
+		<img src="assets/BeyondTheRedMirror.png" class="song" onclick="playSong('nwSong')">
+		<h1>Beyond the Red Mirror</h1>
+		<p>Released in 2015</p>
+		<audio id="nwSong" controls="true" preload="auto">
+			<source src="assets/TheNinthWave.mp3">
+		</audio>
+	</div>
+
+	<div class="album" data-aos="fade-up-left">
+		<img src="assets/LegacyOfTheDarkLands.png" class="song" onclick="playSong('ponrSong')">
+		<h1>Legacy of the Dark Lands</h1>
+		<p>Released in 2019</p>
+		<audio id="ponrSong" controls="true" preload="auto">
+			<source src="assets/PointOfNoReturn.mp3">
+		</audio>
+	</div>
+
+</section>
+
+<!-- Live Header -->
+<section class="livehead">
+	<img src="assets/liveheader.png">
+</section>
+
+<!-- Live -->
+<section class="live">
+	<video controls="true" src="assets/BackgroundVideo.mp4">
+	</video>
+</section>
+
+<!-- Concert Section -->
+<section class="concerts" id="concerts">
+	<div class="flex flex-wrap items-center justify-center">
+		<div>
+			<div>
+				<h1>Waken 2017</h1>
+				<p>Dec 19, 2017</p>
+			</div>
+			<div>
+				<h1>Leyendas del Rock</h1>
+				<p>Aug 09, 2017</p>
+			</div>
+			<div>
+				<h1>Waken 2016</h1>
+				<p>Aug 06, 2016</p>
+			</div>
+			<div>
+				<h1>Fezen Festival 2017</h1>
+				<p>Aug 02, 2017</p>
+			</div>
+		</div>
+
+		<div>
+			<div>
+				<h1>Bloodstock 2017</h1>
+				<p>Aug 13, 2017</p>
+			</div>
+			<div>
+				<h1>Hellfest 2017</h1>
+				<p>Jun 19, 2017</p>
+			</div>
+			<div>
+				<h1>Sweden Rock Festival</h1>
+				<p>Jun 8, 2016</p>
+			</div>
+			<div>
+				<h1>Beyond the Red Mirror</h1>
+				<p>Nov 1, 2015</p>
+			</div>
+		</div>
+	</div>	
+	<a href="https://www.blind-guardian.com/tour/"><div class="goldButton">
+		Get Tickets
+	</div></a>
+</section>
+
+<!-- Newsletter -->
+<section class="newsletter" id="newsletter">
+	<form>
+		<h1>Sign up for our Newsletter!</h1>
+		<p>Signing up for the Blind Guardian newsletter will give you the lastest information on tours, albums, and special offers!</p>
+    	<input type="text" id="fname" name="email" placeholder="example@email.com">
+    	<input type="button" value="Enter">
+	</form>
+</section>
+
+<!-- Footer -->
+<footer>
+	<div class="quin flex items-center">
+		<img src="assets/blindlogo2.png"></img>
+	</div>
+</footer>
+
+<!-- Js -->
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="main.js"></script>
+
+</body>
+</html>

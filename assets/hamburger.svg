@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="30px" viewBox="0 0 48 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+    <title>Icon / Menu / Filled</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M7.75,45 L54.25,45 L54.25,40 L7.75,40 L7.75,45 Z M7.75,32.5 L54.25,32.5 L54.25,27.5 L7.75,27.5 L7.75,32.5 Z M7.75,15 L7.75,20 L54.25,20 L54.25,15 L7.75,15 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(-16.000000, -22.000000)">
+            <g id="Icon-/-Menu-/-Filled" transform="translate(9.000000, 7.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Mask" fill-rule="nonzero"></g>
+                <g id="✱-/-Color-/-Icons-/-Black-/-Active" mask="url(#mask-2)" fill="#000000" fill-opacity="0.87" fill-rule="evenodd">
+                    <rect id="Rectangle-13" x="0" y="0" width="62" height="60"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
